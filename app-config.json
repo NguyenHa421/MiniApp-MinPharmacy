@@ -1,0 +1,17 @@
+{
+  "app": {
+    "title": "Max Pharmacy",
+    "textColor": {
+      "light": "black",
+      "dark": "white"
+    },
+    "statusBar": "transparent",
+    "actionBarHidden": true,
+    "hideIOSSafeAreaBottom": true,
+    "hideAndroidBottomNavigationBar": false
+  },
+  "appID": "1457599952643100188",
+  "listCSS": [],
+  "listSyncJS": [],
+  "listAsyncJS": []
+}
