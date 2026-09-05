@@ -1,17 +1,26 @@
 {
   "app": {
-    "title": "Max Pharmacy",
-    "textColor": {
-      "light": "black",
-      "dark": "white"
-    },
-    "statusBar": "transparent",
+    "title": "Min Pharmacy",
+    "headerColor": "#ffffff",
+    "textColor": "black",
+    "leftButton": "back",
+    "statusBar": "normal",
     "actionBarHidden": true,
-    "hideIOSSafeAreaBottom": true,
-    "hideAndroidBottomNavigationBar": false
+    "hideAndroidBottomNavigationBar": false,
+    "hideIOSSafeAreaBottom": false
   },
-  "appID": "1457599952643100188",
-  "listCSS": [],
-  "listSyncJS": [],
-  "listAsyncJS": []
+  "listCSP": {
+    "connect-src": [
+      "https://minpharmacy.com.vn"
+    ],
+    "img-src": [
+      "https://pos.nhanh.vn",
+      "https://image.nhanh.vn",
+      "https://minpharmacy.com.vn"
+    ]
+  },
+  "template": {
+    "name": "min-pharmacy",
+    "oaIDtoOpenChat": ""
+  }
 }

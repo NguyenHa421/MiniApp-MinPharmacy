@@ -1,8 +1,8 @@
 {
   "name": "max-pharmacy-miniapp",
   "private": true,
-  "version": "1.0.0",
-  "description": "zmp-blank-templates",
+  "version": "2.0.0",
+  "description": "Zalo Mini App nhà thuốc Min Pharmacy — catalog và đơn hàng đồng bộ Nhanh.vn",
   "repository": "",
   "license": "UNLICENSED",
   "browserslist": [
@@ -17,12 +17,14 @@
   "scripts": {
     "login": "zmp login",
     "start": "zmp start",
-    "deploy": "zmp deploy"
+    "deploy": "zmp deploy",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "jotai": "^2.12.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
     "zmp-sdk": "latest",
     "zmp-ui": "latest"
   },
@@ -37,6 +39,7 @@
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.76.0",
     "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.0",
     "vite": "^5.2.13",
     "zmp-vite-plugin": "latest"
   }

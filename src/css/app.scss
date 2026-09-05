@@ -1,14 +1,75 @@
+/* Bảng màu — hiệu thuốc: xanh y tế trầm, nền trắng sạch, cam chỉ dùng cho
+   thông tin khuyến mãi. Cam là điểm nhấn duy nhất, không dùng ở nơi khác. */
+:root {
+  --mnp-primary: #0f8b7e;
+  --mnp-primary-dark: #0a6b60;
+  --mnp-primary-soft: #e6f4f1;
+  --mnp-accent: #ff6b35;
+  --mnp-ink: #12212b;
+  --mnp-muted: #6b7a86;
+  --mnp-line: #e6ebef;
+  --mnp-surface: #f4f6f8;
+}
+
+body {
+  color: var(--mnp-ink);
+  background: var(--mnp-surface);
+}
+
 .page {
-  padding: 16px 16px 96px 16px;
+  padding-bottom: 84px; /* chừa chỗ cho thanh điều hướng dưới */
 }
 
-.section-container {
-  padding: 16px;
-  background: #ffffff;
-  border-radius: 8px;
-  margin-bottom: 24px;
+/* Thẻ dùng viền mảnh thay vì đổ bóng — trông sạch và "y tế" hơn. */
+.mnp-card {
+  background: #fff;
+  border: 1px solid var(--mnp-line);
+  border-radius: 14px;
+  overflow: hidden;
 }
 
-.zaui-list-item {
-  cursor: pointer;
+.mnp-price {
+  color: var(--mnp-primary-dark);
+  font-weight: 700;
+}
+
+.mnp-price-old {
+  color: var(--mnp-muted);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+
+.mnp-badge-sale {
+  background: var(--mnp-accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+
+/* Thanh hành động cố định đáy (giỏ hàng, thanh toán). */
+.mnp-actionbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid var(--mnp-line);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  z-index: 30;
+}
+
+.mnp-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
